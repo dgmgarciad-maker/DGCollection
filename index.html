@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Mon Site Vitrine</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      color: #333;
+    }
+    header {
+      background: #0a74da;
+      color: white;
+      padding: 40px 20px;
+      text-align: center;
+    }
+    nav {
+      background: #083f7a;
+      padding: 10px;
+      text-align: center;
+    }
+    nav a {
+      color: white;
+      margin: 0 10px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    section {
+      padding: 40px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+    .services {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+    .card {
+      border: 1px solid #ddd;
+      padding: 20px;
+      border-radius: 8px;
+    }
+    footer {
+      background: #f4f4f4;
+      text-align: center;
+      padding: 20px;
+      margin-top: 40px;
+    }
+    input, textarea, button {
+      width: 100%;
+      padding: 10px;
+      margin-top: 10px;
+    }
+    button {
+      background: #0a74da;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+    button:hover {
+      background: #084c9e;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Bienvenue sur mon site</h1>
+  <p>Site vitrine simple et moderne</p>
+</header>
+
+<nav>
+  <a href="#apropos">À propos</a>
+  <a href="#services">Services</a>
+  <a href="#contact">Contact</a>
+</nav>
+
+<section id="apropos">
+  <h2>À propos</h2>
+  <p>
+    Présente ici ton activité, ton entreprise ou ton projet.
+  </p>
+</section>
+
+<section id="services">
+  <h2>Mes services</h2>
+  <div class="services">
+    <div class="card">
+      <h3>Service 1</h3>
+      <p>Description du service.</p>
+    </div>
+    <div class="card">
+      <h3>Service 2</h3>
+      <p>Description du service.</p>
+    </div>
+    <div class="card">
+      <h3>Service 3</h3>
+      <p>Description du service.</p>
+    </div>
+  </div>
+</section>
+
+<section id="contact">
+  <h2>Contact</h2>
+  <form>
+    <input type="text" placeholder="Votre nom" required>
+    <input type="email" placeholder="Votre email" required>
+    <textarea rows="5" placeholder="Votre message"></textarea>
+    <button type="submit">Envoyer</button>
+  </form>
+</section>
+
+<footer>
+  <p>© 2026 - Mon Site Vitrine</p>
+</footer>
+
+</body>
+</html>
