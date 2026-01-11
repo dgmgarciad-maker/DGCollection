@@ -1,0 +1,77 @@
+/* style.css */
+
+/* Reset et styles de base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+body {
+    background: #fdfdfd;
+    color: #333;
+    line-height: 1.6;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Header */
+header {
+    background: #fff;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+}
+.logo img {
+    height: 50px; /* ajuste la hauteur à ton goût */
+    width: auto;
+}
+.nav-links {
+    display: flex;
+    gap: 25px;
+}
+.nav-links a {
+    font-size: 16px;
+    position: relative;
+}
+.nav-links a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -3px;
+    width: 0;
+    height: 2px;
+    background: #9b59b6;
+    transition: 0.3s;
+}
+.nav-links a:hover::after {
+    width: 100%;
+}
+
+/* Section exemple */
+section {
+    padding: 100px 40px 60px 40px;
+    opacity: 0;
+    transform: translateY(50px);
+    transition: all 1s ease;
+}
+section.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+section h2 {
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 36px;
+    color: #2c3e50;
+}
